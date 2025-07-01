@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.calculator {
+    width: 380px;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.display {
+    margin-bottom: 20px;
+}
+
+#input {
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #0ff;
+    border-radius: 12px;
+    text-align: right;
+}
+
+#result {
+    text-align: right;
+    margin-top: 8px;
+    font-size: 18px;
+    color: #0f0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.1);
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.08);
+}
+
+.operator {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: #fff;
+}
+
+.operator:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #ff4b2b;
+}
+
+.action {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+}
+
+.equal {
+    background: linear-gradient(45deg, #11998e, #38ef7d);
+    grid-column: span 1;
+}
+
+.high {
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+}
+
+.theme-toggle {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+#toggleTheme {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#toggleTheme:hover {
+    transform: rotate(20deg);
+}
